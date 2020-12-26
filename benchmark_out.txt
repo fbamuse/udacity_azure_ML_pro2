@@ -1,0 +1,171 @@
+(myenv) fukuhara@fukuhara-MS-7C95:~/azureML/udacity_azure_ml2/starter_files$ bash benchmark.sh
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 417babe2-6810-4db4-8f93-42d18f27b1f3.westus2.azurecontainer.io (be patient)...INFO: POST header == 
+---
+POST /score HTTP/1.0
+Content-length: 812
+Content-type: data.json
+Authorization: Bearer gyMaFGY0kEyzCVN1bq0L3gxqJyz5aweQ
+Host: 417babe2-6810-4db4-8f93-42d18f27b1f3.westus2.azurecontainer.io
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:25 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: a7048f34-5634-46c1-ba56-66ec4c303eed
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:26 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 403c29f8-bfdf-4876-92f7-5de4d9347a5e
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:26 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 60f93ee3-f1ca-4c0f-85a7-e7077f44f107
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:26 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 8bcdc2e1-38ca-422c-9baf-93a120648d5d
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:27 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 936ec34f-6a02-4637-8d6e-7b08a7933212
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:27 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 3b46297b-80ac-4468-85b9-75141ca0f688
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:27 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: d9cffeb5-8987-4362-85fb-641b303a763a
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:27 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: d9e35f74-9dc9-406b-9420-45441b4f6c58
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:28 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 8b9eee7f-66ad-455b-bee2-6613051b6651
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+LOG: header received:
+HTTP/1.0 415 Unsupported Media Type
+Content-Length: 58
+Content-Type: application/json
+Date: Sun, 20 Dec 2020 12:51:28 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 3fc6f269-2f14-4937-abee-3dda454ec973
+X-Ms-Run-Function-Failed: False
+
+{"message": "Expects Content-Type to be application/json"}
+WARNING: Response code not 2xx (415)
+..done
+
+
+Server Software:        nginx/1.10.3
+Server Hostname:        417babe2-6810-4db4-8f93-42d18f27b1f3.westus2.azurecontainer.io
+Server Port:            80
+
+Document Path:          /score
+Document Length:        58 bytes
+
+Concurrency Level:      1
+Time taken for tests:   2.780 seconds
+Complete requests:      10
+Failed requests:        0
+Non-2xx responses:      10
+Total transferred:      3050 bytes
+Total body sent:        10500
+HTML transferred:       580 bytes
+Requests per second:    3.60 [#/sec] (mean)
+Time per request:       277.999 [ms] (mean)
+Time per request:       277.999 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.07 [Kbytes/sec] received
+                        3.69 kb/s sent
+                        4.76 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      133  134   0.4    134     134
+Processing:   140  144   3.5    143     152
+Waiting:      140  144   3.2    143     151
+Total:        274  278   3.4    278     286
+
+Percentage of the requests served within a certain time (ms)
+  50%    278
+  66%    279
+  75%    279
+  80%    281
+  90%    286
+  95%    286
+  98%    286
+  99%    286
+ 100%    286 (longest request)
+(myenv) fukuhara@fukuhara-MS-7C95:~/azureML/udacity_azure_ml2/starter_files$ ^C
+(myenv) fukuhara@fukuhara-MS-7C95:~/azureML/udacity_azure_ml2/starter_files$ 
