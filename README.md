@@ -3,50 +3,54 @@
 
 # MLOps by Azure ML Studio in building a forecast model for time deposit subscription
 
-In this project,  use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. and also create, publish, and consume a pipeline
+This project uses Azure to practice MLOps, which automates the machine learning process. Use AutoML to explore the best models, deploy them, publish them, and build a working stream. Finally, we will fully automate the construction and publication of pipelines using the Python SDK.
+
+## how to improve the project in the future
+The freshness of the forecast model is important because joining a time deposit is susceptible to the effects of the economy and financial markets. It is necessary to monitor the data drift and update the model without overlooking the timing of the model update. Implementing a model update trigger function that is linked to the data monitoring process and monitoring thresholds is an effective means.
 
 ## Architectural Diagram
 
-![](p_diagram.png) 
+![](./picture/p_diagram.png) 
 
 ## Key Steps
 
  1. To interact with Azure ML Studio
 
     Create the Service Principal with az after login in
-    ![](p_ServicePrincipal.png)
+    ![](./picture/p_ServicePrincipal.png)
     Capture the "objectId" using the clientID
-    ![](p_objectid.png)
+    ![](./picture/p_objectid.png)
     Assign the role to the new Service Principal for the given Workspace, Resource Group and User objectId  
-    ![](p_workspaceshare.png)
+    ![](./picture/p_workspaceshare.png)
 
 2. Autometed ML Experiment  
     Registered Datasets same Bankmarketing dataset (same as course1)  
-    ![](p_dataset.png)
+    ![](./picture/p_dataset.png)
+    ![](./picture/p_dataset2.png)
     Experiment completed(same as course1)
-    ![](p_experiment.png)
+    ![](./picture/p_experiment.png)
     Best model after experiment complited (same as course1 )
-    ![](p_bestmodel.png)
+    ![](./picture/p_bestmodel.png)
 
 
 3. Application insight  
     how to enable Application Insights from a deployed model and then produced logging output with the Python SDK. The following command will enable the logging.  
-    ![](p_logspy.png)
+    ![](./picture/p_logspy.png)
     after run script, application insights enabled true
-    ![](p_ApplicationInsight.png)
+    ![](./picture/p_ApplicationInsight.png)
 
 4. Swagger Documentation  
 
     Swagger is a tool that helps build, document, and consume RESTful web services like the ones you are deploying in Azure ML Studio. It further explains what types of HTTP requests that an API can consume, like POST and GET.
 
-    ![](p_swagger1.png)
-    ![](p_swagger2.png)
+    ![](./picture/p_swagger1.png)
+    ![](./picture/p_swagger2.png)
 
 5. Consume model endpoint  
     endpoint.py script provided to interact with the trained model.  
     replace the scoring_uri and key to match the REST endpoint and primary key respectively in endpoint.py.   The script issues a POST request to the deployed model and gets a JSON response that gets printed to the terminal.
 
-    ![](p_endpoint.png)
+    ![](./picture/p_endpoint.png)
 
  
 
@@ -68,22 +72,28 @@ In this project,  use Azure to configure a cloud-based machine learning producti
     Automate all processes with the Pythnon SDK.
 
    run notebook after update, pipeline has been created
-   ![](p_pipeline1.png)
+   ![](./picture/p_pipeline1.png)
     bankmarketing dataset with the AutoML module
-    ![](p_pipeline2.png)
+    ![](./picture/p_pipeline2.png)
     endpoint in ML studio   
-    ![](p_pipeline3.png)
+    ![](./picture/p_pipeline3.png)
     REST endpoint and status is active
-    ![](p_pipeline4.png)
+    ![](./picture/p_pipeline4.png)
     In ML studio the scheduled run
 
-    ![](p_pipeline5.png)
+    ![](./picture/p_pipeline5.png)
+    Use RunDetails Widget” with the step runs  
+    ![](./picture/p_rundetail.png)
+
+
 
 
 
 ## Screen Recording
 
-<simplescreenrecorder-2020-12-21_00.33.58.mp4>
+<video width="520" height="340" controls>
+  <source src="udacity2.mp4" type="video/mp4">
+</video>
 
 
 ## Standout Suggestions
