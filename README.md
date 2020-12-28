@@ -90,10 +90,7 @@ The freshness of the forecast model is important because joining a time deposit 
 
 
 ## Screen Recording
-
-<video width="520" height="340" controls>
-  <source src="udacity2.mp4" type="video/mp4">
-</video>
+![](2020-12-29-00-17-10.png)(udacity2.mp4)
 
 
 ## Standout Suggestions
