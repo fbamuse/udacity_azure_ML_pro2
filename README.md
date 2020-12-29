@@ -2,8 +2,7 @@
 
 
 # MLOps by Azure ML Studio in building a forecast model for time deposit subscription
-In this project, we will use Azure to practice MLOps and automate the machine learning process.Use AutoML to find the best model. Deploy the model to a container instance, analyze the endpoint's interface, access it, and benchmark it.  
-Finally, use the Python SDK to fully automate the construction and publishing of your pipeline.
+In this project, we will use Azure to practice MLOps and automate the machine learning process. Use AutoML to find the best model. Deploy the model to a container instance. Then analyze the endpoint's interface to make sure it is accessible and perform performance tests. Finally, use the Python SDK to fully automate the construction and publishing of your pipeline.
 
 ## how to improve the project in the future
 The freshness of the forecast model is important because joining a time deposit is susceptible to the effects of the economy and financial markets. It is necessary to monitor the data drift and update the model without overlooking the timing of the model update. Implementing a model update trigger function that is linked to the data monitoring process and monitoring thresholds is an effective means.
